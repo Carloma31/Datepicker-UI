@@ -1,0 +1,91 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.datepicker {
+    position: relative;
+    display: inline-block;
+    margin: 20px;
+}
+
+.datepicker-input {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;
+    width: 200px;
+}
+
+.datepicker-input input {
+    border: none;
+    outline: none;
+    flex-grow: 1;
+    padding: 5px;
+}
+
+.datepicker-input button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.calendario{
+    position: absolute;
+    top:45px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.calendarioCabecera{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid black;
+    padding: 10px;
+}
+.calendarioCabecera button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+#caledarioCuerpo{
+    padding: 10px;
+}
+#nombreDiaSemana{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#nombreDiaSemana span{
+    width: 40px;
+    text-align: center;
+    font-weight: bold;
+    color: #555;
+}
+#diaSemana{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+#diaSemana span{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+
+#diaSemana span:hover{
+    background-color: #eee;
+    border-radius: 50%;
+}
